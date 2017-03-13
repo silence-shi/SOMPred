@@ -46,7 +46,7 @@ public class ChemSearcher {
 	public List<List<Integer>> getMatchingAtoms(IAtomContainer molecule,
 			SMARTSQueryTool smartsPattern) throws Exception {
 		//IChemObjectBuilder builder = SilentChemObjectBuilder.getInstance();
-		//boolean occurrences = smartsPattern.matches(molecule);
+		boolean occurrences = smartsPattern.matches(molecule);
 		List<List<Integer>> indexes = smartsPattern.getMatchingAtoms();
 //		for (int i = 0; i < indexes.size(); i++) {
 //			List<Integer> currentAtomIndexes = indexes.get(i);
